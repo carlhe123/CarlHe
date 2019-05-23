@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud.iml" beforeDir="false" />
+    <list default="true" id="875a29f4-9b27-41a0-a46b-bd38bc93f19f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-cloud/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/spring-cloud.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
@@ -100,7 +100,9 @@
     <ignored path="$PROJECT_DIR$/spring-cloud-config-client/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-config-server/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client/target/" />
-    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-server/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client/user-api/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client/user-provider/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client/user-consumer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,23 +114,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
@@ -136,13 +124,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -177,25 +158,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-framework" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-cloud-eureka-server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,6 +192,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringCloudConfigClientApplication">
+    <configuration name="ConsumerEurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.carl.consumer.ConsumerEurekaClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderEurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.carl.provider.ProviderEurekaClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringCloudConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-cloud-config-client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.carl.config.springcloudconfigclient.SpringCloudConfigClientApplication" />
@@ -220,13 +216,6 @@
     <configuration name="SpringCloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-cloud-config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.carl.config.springcloudconfigserver.SpringCloudConfigServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringCloudEurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-cloud-eureka-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.carl.eureka.springcloudeurekaclient.SpringCloudEurekaClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,17 +233,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="" />
-      <created>1558571772272</created>
+      <changelist id="875a29f4-9b27-41a0-a46b-bd38bc93f19f" name="Default Changelist" comment="" />
+      <created>1558572185604</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558571772272</updated>
-      <workItem from="1558571773759" duration="521000" />
+      <updated>1558572185604</updated>
+      <workItem from="1558572188196" duration="113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521000" />
+    <option name="totallyTimeSpent" value="113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -299,19 +288,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
