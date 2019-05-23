@@ -2,98 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/SpringCloudConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/health/MyHealthIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/test/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-client/src/test/java/com/carl/config/springcloudconfigclient/SpringCloudConfigClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/java/com/carl/config/springcloudconfigserver/SpringCloudConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/config/carl-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/config/carl-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/config/carl-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/main/resources/config/carl-test1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-config-server/src/test/java/com/carl/config/springcloudconfigserver/SpringCloudConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/classes/META-INF/user-api.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/model/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/service/PersonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/user-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-api/target/user-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/ConsumerEurekaClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/proxy/UserServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/target/classes/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/ConsumerEurekaClientApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/proxy/UserServiceProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/ProviderEurekaClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/ProviderEurekaClientApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/src/main/java/com/carl/eureka/springcloudeurekaserver/SpringCloudEurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-eureka-server/src/test/java/com/carl/eureka/springcloudeurekaserver/SpringCloudEurekaServerApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/SpringCloudConfigClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/health/MyHealthIndicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/main/java/com/carl/config/springcloudconfigclient/test/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-client/src/test/java/com/carl/config/springcloudconfigclient/SpringCloudConfigClientApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/java/com/carl/config/springcloudconfigserver/SpringCloudConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/config/carl-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/config/carl-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/config/carl-test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/main/resources/config/carl-test1.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-config-server/src/test/java/com/carl/config/springcloudconfigserver/SpringCloudConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/service/PersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/src/main/java/com/carl/api/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/classes/META-INF/user-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/model/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/service/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/classes/com/carl/api/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/user-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-api/target/user-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/ConsumerEurekaClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/src/main/java/com/carl/consumer/proxy/UserServiceProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/target/classes/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/ConsumerEurekaClientApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-consumer/target/classes/com/carl/consumer/proxy/UserServiceProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/ProviderEurekaClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/java/com/carl/provider/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/ProviderEurekaClientApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-client/user-provider/target/classes/com/carl/provider/service/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/src/main/java/com/carl/eureka/springcloudeurekaserver/SpringCloudEurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework-cloud/spring-cloud-eureka-server/src/test/java/com/carl/eureka/springcloudeurekaserver/SpringCloudEurekaServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-framework/spring-cloud-framework.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -249,15 +255,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558571772272</updated>
-      <workItem from="1558571773759" duration="521000" />
+      <workItem from="1558571773759" duration="795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521000" />
+    <option name="totallyTimeSpent" value="795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
