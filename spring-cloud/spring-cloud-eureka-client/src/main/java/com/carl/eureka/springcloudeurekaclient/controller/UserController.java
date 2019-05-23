@@ -27,6 +27,7 @@ public class UserController {
 
     @GetMapping("/get/name")
     public String getApplicationName(){
+//        System.out.println(System.getProperties());
         return appName;
     }
 }
