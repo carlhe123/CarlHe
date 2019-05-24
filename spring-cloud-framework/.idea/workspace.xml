@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="875a29f4-9b27-41a0-a46b-bd38bc93f19f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-client/src/main/java/com/carl/eureka/springcloudeurekaclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-client/src/main/java/com/carl/eureka/springcloudeurekaclient/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-client/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/spring-cloud-eureka-server/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -280,6 +276,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
