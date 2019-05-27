@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-framework/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud-framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/src/main/java/com/carl/batch/springbatch/SpringBatchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/src/main/java/com/carl/batch/springbatch/SpringBatchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/src/test/java/com/carl/batch/springbatch/SpringBatchApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/src/test/java/com/carl/batch/springbatch/SpringBatchApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,7 +111,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1850" />
@@ -121,6 +126,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,16 +134,10 @@
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,17 +212,17 @@
       <updated>1558571772272</updated>
       <workItem from="1558571773759" duration="13395000" />
       <workItem from="1558658653009" duration="19000" />
+      <workItem from="1558917114269" duration="432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13414000" />
+    <option name="totallyTimeSpent" value="13846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5283019" visible="true" weight="0.3138412" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5283019" visible="true" weight="0.31813306" />
       <window_info id="Structure" order="1" sideWeight="0.4716981" side_tool="true" weight="0.30954936" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,6 +426,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server/src/main/java/com/carl/eureka/springcloudeurekaserver/SpringCloudEurekaServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -443,14 +451,6 @@
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
