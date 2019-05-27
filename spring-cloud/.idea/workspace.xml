@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-framework/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-framework/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/src/main/java/com/carl/batch/springbatch/SpringBatchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/src/main/java/com/carl/batch/springbatch/SpringBatchApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-framework/spring-batch/src/test/java/com/carl/batch/springbatch/SpringBatchApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-framework/spring-batch/src/test/java/com/carl/batch/springbatch/SpringBatchApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3734373-f6f5-40c4-8805-6bdabf0368b9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-config-client/target/" />
@@ -212,12 +204,12 @@
       <updated>1558571772272</updated>
       <workItem from="1558571773759" duration="13395000" />
       <workItem from="1558658653009" duration="19000" />
-      <workItem from="1558917114269" duration="432000" />
+      <workItem from="1558917114269" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13846000" />
+    <option name="totallyTimeSpent" value="14025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
