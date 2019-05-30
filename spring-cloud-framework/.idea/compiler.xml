@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-config-client" />
         <module name="spring-cloud-framework" />
+        <module name="user-consumer" />
         <module name="user-provider" />
         <module name="user-api" />
-        <module name="spring-cloud-config-server" />
         <module name="spring-cloud-eureka-server" />
-        <module name="user-consumer" />
+        <module name="spring-cloud-config-server" />
       </profile>
     </annotationProcessing>
   </component>
