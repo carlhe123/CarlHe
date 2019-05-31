@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="/static/js/angular.js"/>
+    <script type="text/javascript" src="/static/js/angulartreeview.js"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-app="ng.demo" ng-controller="demoController">
+    名: <input type="text" ng-model="firstName"><br>
+    姓: <input type="text" ng-model="lastName"><br>
+    <br>
+    姓名: {{firstName + " " + lastName}}
+</div>
+<div>
+    <ul class="tree-view">
+        <li ng-repeat="item in treeData" ng-include="'treeItem.html'"></li>
+    </ul>
+</div>
+<div>
+    <tree-view
+            tree-data="demo.tree"
+            text-field="name"
+            value-field='id'
+            item-clicked="demo.itemClicked($item)"
+            item-checked-changed="demo.itemCheckedChanged($item)"
+            can-checked="true">
+    </tree-view>
+</div>
+</body>
+</html>
