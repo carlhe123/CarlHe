@@ -1,44 +1,258 @@
-var app = angular.module('ng.demo', []);
+var app = angular.module('demo', []);
 
-app.controller('demoController', function($scope) {
+app.controller('demoController', function($scope, $timeout) {
+    var apple_selected, tree, treedata_avm;
     debugger;
     $scope.firstName = "John";
     $scope.lastName = "Doe";
-});
-
-app.directive('treeView', [function () {
-    return {
-        restrict: 'E',
-        templateUrl: '/templates/html/treeview.html',
-        scope: {
-            treeData: '=',
-            canChecked: '=',
-            textField: '@',
-            itemClicked: '&',
-            itemCheckedChanged: '&',
-            itemTemplateUrl: '@'
-        },
-        controller: ['$scope', function ($scope) {
-            $scope.itemExpended = function (item, $event) {
-                item.$$isExpend = !item.$$isExpend;
-                $event.stopPropagation();
-            };
-            $scope.getItemIcon = function (item) {
-                var isLeaf = $scope.isLeaf(item);
-                if (isLeaf) {
-                    return 'fa fa-leaf';
-                }
-                return item.$$isExpend ? 'fa fa-minus' : 'fa fa-plus';
-            };
-            $scope.isLeaf = function (item) {
-                return !item.children || !item.children.length;
-            };
-            $scope.warpCallback = function (callback, item, $event) {
-                ($scope[callback] || angular.noop)({
-                    $item: item,
-                    $event: $event
-                });
-            };
-        }]
+    $scope.my_tree_handler = function(branch) {
+        var _ref;
+        $scope.output = "You selected: " + branch.label;
+        if ((_ref = branch.data) != null ? _ref.description : void 0) {
+            return $scope.output += '(' + branch.data.description + ')';
+        }
     };
-}]);
+    apple_selected = function(branch) {
+        return $scope.output = "APPLE! : " + branch.label;
+    };
+    treedata_avm=[
+        {
+            name: 'Animal',
+            id: 1,
+            level: 1,
+            parentId: -1,
+            children: [
+                {
+                    name: 'Dog',
+                    id: 2,
+                    level: 2,
+                    parentId: 1,
+                    data: {
+                        description: "man's best friend"
+                    }
+                }, {
+                    name: 'Cat',
+                    id: 3,
+                    level: 2,
+                    parentId: 1,
+                    data: {
+                        description: "Felis catus"
+                    }
+                }, {
+                    name: 'Hippopotamus',
+                    id: 4,
+                    level: 2,
+                    parentId: 1,
+                    data: {
+                        description: "hungry, hungry"
+                    }
+                }, {
+                    name: 'Chicken',
+                    id: 5,
+                    parentId: 1,
+                    level: 2,
+                    children: [{
+                        name: 'White Leghorn',
+                        parentId: 5,
+                        level: 3, id: 6
+                    }, {
+                        name: 'Rhode Island Red',
+                        parentId: 5,
+                        level: 3, id: 7
+                    }, {
+                        name: 'Jersey Giant',
+                        level: 3,
+                        parentId: 5,
+                        id: 8
+                    }]
+                }
+            ]
+        },
+        {
+            name: 'Vegetable',
+            id: 9,
+            level: 1,
+            parentId: -1,
+            data: {
+                definition: "A plant or part of a plant used as food, typically as accompaniment to meat or fish, such as a cabbage, potato, carrot, or bean.",
+                data_can_contain_anything: true
+            },
+            onSelect: function (branch) {
+                return $scope.output = "Vegetable: " + branch.data.definition;
+            },
+            children: [
+                {
+                    name: 'Oranges',
+                    level: 2,
+                    parentId: 9,
+                    id: 10
+                },
+                {
+                    name: 'Apples',
+                    id: 11,
+                    parentId: 10,
+                    level: 2,
+                    children: [
+                        {
+                            name: 'Granny Smith',
+                            id: 12,
+                            parentId: 11,
+                            level: 3,
+                            onSelect: apple_selected
+                        }, {
+                            name: 'Red Delicous',
+                            id: 13,
+                            parentId: 11,
+                            level: 3,
+                            onSelect: apple_selected
+                        }, {
+                            name: 'Fuji',
+                            id: 14,
+                            parentId: 11,
+                            level: 3,
+                            onSelect: apple_selected
+                        }
+                    ]
+                }
+            ]
+        }, {
+            name: 'Mineral',
+            id: 15,
+            level: 1,
+            parentId: -1,
+            children: [
+                {
+                    name: 'Rock',
+                    id: 16,
+                    parentId: 15,
+                    level: 2,
+                    children: [
+                        {
+                            name: 'Igneous',
+                            level: 3,
+                            parentId: 16,
+                            id: 17
+                        },
+                        {
+                            name: 'Sedimentary',
+                            level: 3,
+                            parentId: 16,
+                            id: 18
+                        },
+                        {
+                            name: 'Metamorphic',
+                            parentId: 16,
+                            level: 3, id: 19
+                        }]
+                }, {
+                    name: 'Metal',
+                    id: 20,
+                    parentId: 15,
+                    level: 2,
+                    children: [{
+                        name: 'Aluminum',
+                        parentId: 20,
+                        level: 3, id: 21
+                    }, {
+                        name: 'Steel',
+                        parentId: 20,
+                        level: 3, id: 22
+                    }, {
+                        name: 'Copper',
+                        parentId: 20,
+                        level: 3, id: 23
+                    }]
+                }, {
+                    name: 'Plastic',
+                    id: 24,
+                    parentId: 15,
+                    level: 2,
+                    children: [
+                        {
+                            name: 'Thermoplastic',
+                            id: 25,
+                            parentId: 24,
+                            level: 3,
+                            children: [{
+                                name: 'polyethylene',
+                                parentId: 25,
+                                level: 4, id: 26
+                            }, {
+                                name: 'polypropylene',
+                                level: 4,
+                                parentId: 25,
+                                id: 27
+                            }, {
+                                name: 'polystyrene',
+                                parentId: 25,
+                                level: 4, id: 28
+                            },
+                                {
+                                    name: ' polyvinyl chloride',
+                                    parentId: 25,
+                                    level: 4, id: 29
+                                }]
+                        }, {
+                            name: 'Thermosetting Polymer',
+                            id: 30,
+                            parentId: 24,
+                            level: 3,
+                            children: [
+                                {
+                                    name: 'polyester',
+                                    parentId: 30,
+                                    level: 4, id: 31
+                                },
+                                {
+                                    name: 'polyurethane',
+                                    parentId: 30,
+                                    level: 4,
+                                    id: 32
+                                }, {
+                                    name: 'vulcanized rubber',
+                                    parentId: 30,
+                                    level: 4, id: 33
+                                }, {
+                                    name: 'bakelite',
+                                    parentId: 30,
+                                    level: 4,
+                                    id: 34
+                                }, {
+                                    name: 'urea-formaldehyde',
+                                    parentId: 30,
+                                    level: 4, id: 35
+                                }]
+                        }
+                    ]
+                }
+            ]
+        }
+    ];
+
+    $scope.treeData = treedata_avm;
+    $scope.my_tree = tree = {};
+    $scope.try_async_load = function() {
+        $scope.my_data = [];
+        $scope.doing_async = true;
+        return $timeout(function() {
+            if (Math.random() < 0.5) {
+                $scope.my_data = treedata_avm;
+            } else {
+                $scope.my_data = treedata_geography;
+            }
+            $scope.doing_async = false;
+            return tree.expand_all();
+        }, 1000);
+    };
+    return $scope.try_adding_a_branch = function() {
+        var b;
+        b = tree.get_selected_branch();
+        return tree.add_branch(b, {
+            label: 'New Branch',
+            data: {
+                something: 42,
+                "else": 43
+            }
+        });
+    };
+});

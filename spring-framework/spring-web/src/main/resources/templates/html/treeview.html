@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script type="text/javascript" src="/static/js/angular.js"/>
-    <script type="text/javascript" src="/static/js/angulartreeview.js"/>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/static/css/abn_tree.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
 </head>
 <body>
-<div ng-app="ng.demo" ng-controller="demoController">
-    名: <input type="text" ng-model="firstName"><br>
-    姓: <input type="text" ng-model="lastName"><br>
-    <br>
-    姓名: {{firstName + " " + lastName}}
-</div>
-<div>
-    <ul class="tree-view">
-        <li ng-repeat="item in treeData" ng-include="'treeItem.html'"></li>
-    </ul>
-</div>
-<div>
-    <tree-view
-            tree-data="demo.tree"
-            text-field="name"
-            value-field='id'
-            item-clicked="demo.itemClicked($item)"
-            item-checked-changed="demo.itemCheckedChanged($item)"
-            can-checked="true">
-    </tree-view>
+<script src="/static/js/angular.js"></script>
+<script src="/static/js/angulartreeview.js"></script>
+<script src="/static/js/test_directive.js"></script>
+
+<div ng-app="demo" ng-controller="demoController">
+    <div>
+        名: <input type="text" ng-model="firstName"><br>
+        姓: <input type="text" ng-model="lastName"><br>
+        <br>
+        姓名: {{firstName + " " + lastName}}
+    </div>
+    <div>
+        <omc-tree
+                tree-data         = "treeData"
+                tree-control      = "my_tree"
+                on-select         = "my_tree_handler(branch)"
+                expand-level      = "2"
+                initial-selection = "Animal"
+                icon-leaf         = "fa fa-file-o"
+                icon-expand       = "fa fa-plus"
+                icon-collapse     = "fa fa-minus"
+        >
+        </omc-tree>
+    </div>
 </div>
 </body>
 </html>
