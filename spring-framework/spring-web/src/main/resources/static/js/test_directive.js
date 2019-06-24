@@ -16,7 +16,8 @@
                     treeData: '=',
                     onSelect: '&',
                     initialSelection: '@',
-                    treeControl: '='
+                    treeControl: '=',
+                    expandLevel: '='
                 },
                 link: function (scope, element, attrs) {
                     var error, expand_all_parents, expand_level, for_all_ancestors, for_each_branch, get_parent, n, on_treeData_change, select_branch, selected_branch, tree;
@@ -36,7 +37,6 @@
                     if (attrs.expandLevel == null) {
                         attrs.expandLevel = '3';
                     }
-                    expand_level = 20;
                     if (!scope.treeData) {
                         alert('no treeData defined for the tree!');
                         return;
@@ -244,10 +244,13 @@
                     }
                     n = scope.treeData.length;
                     // console.log('num root branches = ' + n);
-                    for_each_branch(function (b) {
-                        // b.level = level;
-                        return b.expanded = b.level < expand_level;
-                    });
+                    //  去掉默认扩展
+                    if (attrs.expandLevel != null) {
+                        for_each_branch(function (b) {
+                            expand_level = attrs.expandLevel;
+                            return b.expanded = b.level < expand_level;
+                        });
+                    }
                     if (scope.treeControl != null) {
                         if (angular.isObject(scope.treeControl)) {
                             tree = scope.treeControl;

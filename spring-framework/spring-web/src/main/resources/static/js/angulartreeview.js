@@ -1,8 +1,7 @@
 var app = angular.module('demo', []);
 
 app.controller('demoController', function($scope, $timeout) {
-    var apple_selected, tree, treedata_avm;
-    debugger;
+    var apple_selected, tree, treedata_avm,for_each_branch,collapse_all_tree;
     $scope.firstName = "John";
     $scope.lastName = "Doe";
     $scope.my_tree_handler = function(branch) {
@@ -12,6 +11,13 @@ app.controller('demoController', function($scope, $timeout) {
             return $scope.output += '(' + branch.data.description + ')';
         }
     };
+    $scope.addProdGroup = function(branch){
+        alert(branch.label);
+    };
+    $scope.deleteProdGroup = function(branch){
+        alert(branch.label);
+    };
+
     apple_selected = function(branch) {
         return $scope.output = "APPLE! : " + branch.label;
     };
@@ -77,9 +83,6 @@ app.controller('demoController', function($scope, $timeout) {
                 definition: "A plant or part of a plant used as food, typically as accompaniment to meat or fish, such as a cabbage, potato, carrot, or bean.",
                 data_can_contain_anything: true
             },
-            onSelect: function (branch) {
-                return $scope.output = "Vegetable: " + branch.data.definition;
-            },
             children: [
                 {
                     name: 'Oranges',
@@ -98,19 +101,16 @@ app.controller('demoController', function($scope, $timeout) {
                             id: 12,
                             parentId: 11,
                             level: 3,
-                            onSelect: apple_selected
                         }, {
                             name: 'Red Delicous',
                             id: 13,
                             parentId: 11,
                             level: 3,
-                            onSelect: apple_selected
                         }, {
                             name: 'Fuji',
                             id: 14,
                             parentId: 11,
                             level: 3,
-                            onSelect: apple_selected
                         }
                     ]
                 }
@@ -230,29 +230,5 @@ app.controller('demoController', function($scope, $timeout) {
     ];
 
     $scope.treeData = treedata_avm;
-    $scope.my_tree = tree = {};
-    $scope.try_async_load = function() {
-        $scope.my_data = [];
-        $scope.doing_async = true;
-        return $timeout(function() {
-            if (Math.random() < 0.5) {
-                $scope.my_data = treedata_avm;
-            } else {
-                $scope.my_data = treedata_geography;
-            }
-            $scope.doing_async = false;
-            return tree.expand_all();
-        }, 1000);
-    };
-    return $scope.try_adding_a_branch = function() {
-        var b;
-        b = tree.get_selected_branch();
-        return tree.add_branch(b, {
-            label: 'New Branch',
-            data: {
-                something: 42,
-                "else": 43
-            }
-        });
-    };
+    $scope.my_tree = tree =  {};
 });
