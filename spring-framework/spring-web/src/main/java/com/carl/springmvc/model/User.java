@@ -9,8 +9,17 @@ package com.carl.springmvc.model;
 public class User {
 
     private String name;
+    private String password;
     private Integer id;
     private String sex;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getName() {
         return name;
