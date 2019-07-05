@@ -1,42 +1,38 @@
-<html lang="en" data-ng-app="app">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="/static/css/abn_tree.css">
-    <link rel="stylesheet" href="/static/css/app.css">
-    <link rel="stylesheet" href="/static/css/font.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
 </head>
-<body ng-app="login" ng-controller="AppCtrl">
-<script src="/static/js/login.js"></script>
-<script src="/static/js/angular.js"></script>
-<script src="/static/js/jquery-1.10.2.js"></script>
-<div class="wrapper-md">
-    <div class="panel-heading">首页登录</div>
-    <div class="panel-body">
-        <div class="hbox hbox-auto-xs hbox-auto-sm">
-            <div class="modal-body">
-                <div class="row wrapper">
-                    <form class="form-horizontal form-validation" name="form">
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <label class="col-sm-2">用户名：</label>
-                                <input ng-model="username"/>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="col-sm-2">密码：</label>
-                                <input ng-model="password"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <button class="btn btn-primary" ng-disabled="form.$invalid" ng-click="submit()">提交</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<body>
+<h1>用户登录</h1>
+<hr>
+<form id="from" action="${root!}/login" method="post">
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td>
+                <input type="text" name="username" placeholder="请输入账户名"/>
+            </td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td>
+                <input type="password" name="password" placeholder="请输入密码"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <font color="red">${msg!}</font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="登录"/>
+                <input type="reset" value="重置"/>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

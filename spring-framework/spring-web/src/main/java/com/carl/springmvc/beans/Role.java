@@ -32,4 +32,12 @@ public class Role implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Set<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(Set<Permission> permissions) {
+        this.permissions = permissions;
+    }
 }

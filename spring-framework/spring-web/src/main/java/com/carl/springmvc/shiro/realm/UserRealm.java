@@ -1,5 +1,7 @@
 package com.carl.springmvc.shiro.realm;
 
+import com.carl.springmvc.beans.Permission;
+import com.carl.springmvc.beans.Role;
 import com.carl.springmvc.constant.LoginConstants;
 import com.carl.springmvc.beans.User;
 import org.apache.shiro.SecurityUtils;
@@ -9,7 +11,9 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.util.ByteSource;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,41 +26,48 @@ import java.util.Set;
 public class UserRealm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+        System.out.println("===执行授权===");
+
         Subject subject = SecurityUtils.getSubject();
-        AuthorizationInfo cacheInfo = (AuthorizationInfo) subject.getSession().getAttribute(LoginConstants.AUTHORIZATION_INFO_KEY);
-        if(this.isCachingEnabled()&&cacheInfo!=null){
-            return cacheInfo;
+        User user = (User)subject.getPrincipal();
+        if(user != null){
+            SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+            // 角色与权限字符串集合
+            Collection<String> rolesCollection = new HashSet<>();
+            Collection<String> premissionCollection = new HashSet<>();
+            // 读取并赋值用户角色与权限
+            Set<Role> roles = user.getRoles();
+            for(Role role : roles){
+                rolesCollection.add(role.getName());
+                Set<Permission> permissions = role.getPermissions();
+                for (Permission permission : permissions){
+                    premissionCollection.add(permission.getUrl());
+                }
+                info.addStringPermissions(premissionCollection);
+            }
+            info.addRoles(rolesCollection);
+            return info;
         }
-        String account = (String) super.getAvailablePrincipal(principals);
-        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-
-        User user = new User();
-        user.setUsername(account);
-        user.setPassword("123456");
-        Set<String> roleSet = new HashSet<>();
-        roleSet.add("系统操作管理员");
-        info.setRoles(roleSet);
-        if(subject.getSession().getAttribute(LoginConstants.LOGIN_STATE_KEY) == null){
-            subject.getSession().setAttribute(LoginConstants.LOGIN_STATE_KEY, user);
-        }
-
-        subject.getSession().setAttribute(LoginConstants.AUTHORIZATION_INFO_KEY,info);
-        System.out.println(principals);
-        return info;
+        return null;
     }
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-        System.out.println("————身份认证方法————");
-        UsernamePasswordToken userToken = (UsernamePasswordToken) token;
-        //从数据库获取对应用户名密码的用户
-        String userName = userToken.getUsername();
-        String password = new String((char[]) token.getCredentials());
-        if (!"carl".equals(userName)) {
-            throw new AccountException("用户名不正确");
-        } else if (!"123456".equals(password)) {
-            throw new AccountException("密码不正确");
+        System.out.println("===执行认证===");
+
+        UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken)token;
+        User bean = new User();
+        bean.setUsername("carl");
+        bean.setPassword("123456");
+//                userService.findByName(token.getUsername());
+
+        if(bean == null){
+            throw new UnknownAccountException();
         }
-        return new SimpleAuthenticationInfo(token.getPrincipal(), password, getName());
+
+        ByteSource credentialsSalt = ByteSource.Util.bytes(bean.getUsername());
+
+        return new SimpleAuthenticationInfo(bean, bean.getPassword(),
+                credentialsSalt, getName());
     }
 }
