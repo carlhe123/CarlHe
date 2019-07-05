@@ -1,7 +1,7 @@
 package com.carl.springmvc.shiro.realm;
 
 import com.carl.springmvc.constant.LoginConstants;
-import com.carl.springmvc.model.User;
+import com.carl.springmvc.beans.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -31,7 +31,7 @@ public class UserRealm extends AuthorizingRealm {
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 
         User user = new User();
-        user.setName(account);
+        user.setUsername(account);
         user.setPassword("123456");
         Set<String> roleSet = new HashSet<>();
         roleSet.add("系统操作管理员");

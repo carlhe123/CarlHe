@@ -1,6 +1,6 @@
 package com.carl.springmvc.controller;
 
-import com.carl.springmvc.model.User;
+import com.carl.springmvc.beans.User;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

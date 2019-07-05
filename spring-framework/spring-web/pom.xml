@@ -43,6 +43,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
@@ -61,28 +65,21 @@
             <artifactId>shiro-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-jsp-api</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>angularjs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.5</version>
         </dependency>
     </dependencies>
 
@@ -122,4 +119,25 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <profiles>
+        <profile>
+            <id>mybatis-generator</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.mybatis.generator</groupId>
+                        <artifactId>mybatis-generator-maven-plugin</artifactId>
+                        <version>1.3.2</version>
+                        <configuration>
+                            <!-- 配置文件路径 -->
+                            <configurationFile>${basedir}/src/main/resources/mybatis-generator/generatorConfig.xml</configurationFile>
+                            <verbose>true</verbose>
+                            <overwrite>true</overwrite>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

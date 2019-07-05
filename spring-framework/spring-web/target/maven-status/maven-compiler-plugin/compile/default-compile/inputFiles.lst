@@ -4,5 +4,7 @@ D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\shir
 D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\SpringWebMvcApplication.java
 D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\constant\LoginConstants.java
 D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\controller\LoginController.java
+D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\model\Permission.java
 D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\controller\UserController.java
+D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\model\Role.java
 D:\java\CarlHe\spring-framework\spring-web\src\main\java\com\carl\springmvc\interceptor\WebMvcConfig.java
