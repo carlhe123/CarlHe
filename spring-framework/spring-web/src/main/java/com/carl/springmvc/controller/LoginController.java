@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
@@ -35,7 +34,7 @@ public class LoginController {
         Subject subject = SecurityUtils.getSubject();
         //注销
         subject.logout();
-        return "redirect:/login.jsp";
+        return "redirect:/login.html";
     }
 
     /**
@@ -57,7 +56,7 @@ public class LoginController {
             return new ModelAndView("redirect:/", "errorMsg", "");
         }else {
             token.clear();
-            return new ModelAndView("/login.jsp", "errorMsg", "用户名或密码不正确!");
+            return new ModelAndView("login.html", "errorMsg", "用户名或密码不正确!");
         }
     }
 }

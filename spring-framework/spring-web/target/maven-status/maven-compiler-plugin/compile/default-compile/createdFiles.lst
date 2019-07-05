@@ -1,3 +1,8 @@
-com\carl\springmvc\controller\UserController.class
+com\carl\springmvc\controller\LoginController.class
 com\carl\springmvc\model\User.class
-com\carl\springmvc\SpringMvcApplication.class
+com\carl\springmvc\SpringWebMvcApplication.class
+com\carl\springmvc\shiro\realm\UserRealm.class
+com\carl\springmvc\shiro\config\ShiroConfig.class
+com\carl\springmvc\controller\UserController.class
+com\carl\springmvc\interceptor\WebMvcConfig.class
+com\carl\springmvc\constant\LoginConstants.class

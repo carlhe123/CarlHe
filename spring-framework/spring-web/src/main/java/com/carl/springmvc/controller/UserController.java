@@ -1,9 +1,9 @@
 package com.carl.springmvc.controller;
 
 import com.carl.springmvc.model.User;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -61,7 +61,7 @@ public class UserController {
      * @param user	用户
      * @return {@link Boolean}
      **/
-    @RequestMapping("/user/save")
+    @RequestMapping(value = "/user/save",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public Boolean saveUser(@RequestBody User user){
         if (user.getId()!=null) {
