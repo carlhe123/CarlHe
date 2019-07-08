@@ -37,36 +37,6 @@ public class PasswordHelper {
 		ByteSource passwordSalt = ByteSource.Util.bytes(password);
 		String newPassword = new SimpleHash(algorithmName, password,
 				passwordSalt, hashIterations).toHex();
-
-//		user.setPassword(newPassword);
 		return newPassword;
 	}
-
-//	public String encryptPassword(StringBuilder password) {
-//
-//		String salt = randomNumberGenerator.nextBytes().toHex();
-//
-//		String newPassword = new SimpleHash(algorithmName, password.toString(),
-//				salt, hashIterations).toHex();
-//
-//		password.delete(0, password.length());
-//		password.append(newPassword);
-//
-//		return salt;
-//	}
-
-//	public Boolean verifyPassword(UserEntity user, String password) {
-//		if (password == null) {
-//			password = ""; //NOSONAR
-//		}
-//
-//		String newPassword = new SimpleHash(algorithmName, password,
-//				getSalt(user), hashIterations).toHex();
-//
-//		return user.getPassword().equals(newPassword);
-//	}
-
-//	public ByteSource getSalt(UserEntity user) {
-//		return ByteSource.Util.bytes(user.getCredentialsSalt());
-//	}
 }
