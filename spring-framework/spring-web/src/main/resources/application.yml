@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     # 配置数据库链接
-    url: jdbc:mysql://localhost:3306/lastpass?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/carl?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     # 配置数据库登录用户名
     username: root
     # 配置数据库登录密码
@@ -45,7 +45,7 @@ spring:
     prefix: classpath:/templates/html/
     suffix: .html
     encoding: UTF-8
-    cache: false
+    cache: true
     mode: HTML
   # 配置字符编码 解决页面乱码问题
   http:
@@ -54,7 +54,7 @@ spring:
       enabled: true
       force: true
 mybatis:
-  # 配置mybatis mapper.xml路径
-  mapper-locations: classpath:mappers/*.xml
-  # 虽然可以配置这项来进行pojo包扫描，但其实我更倾向于在mapper.xml写全类名
-  type-aliases-package: com.carl.springmvc.model
+  # config-location: classpath:mybatis/mybatis-cfg.xml    # mybatis配置文件所在路径
+  type-aliases-package: com.carl.springmvc.model        # 定义所有操作类的别名所在包
+  mapper-locations:                                     # 所有的mapper映射文件
+    - classpath:mappers/*.xml

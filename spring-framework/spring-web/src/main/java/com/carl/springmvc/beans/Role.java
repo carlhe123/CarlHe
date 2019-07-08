@@ -13,24 +13,24 @@ import java.util.Set;
 public class Role implements Serializable {
 
     private static final long serialVersionUID = 7384862273131847847L;
-    private Integer id;
-    private String name;
+    private Integer roleId;
+    private String roleName;
     private Set<Permission> permissions = new HashSet<>();
 
-    public Integer getId() {
-        return id;
+    public Integer getRoleId() {
+        return roleId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 
-    public String getName() {
-        return name;
+    public String getRoleName() {
+        return roleName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
     }
 
     public Set<Permission> getPermissions() {
@@ -39,5 +39,14 @@ public class Role implements Serializable {
 
     public void setPermissions(Set<Permission> permissions) {
         this.permissions = permissions;
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "roleId=" + roleId +
+                ", roleName='" + roleName + '\'' +
+                ", permissions=" + permissions +
+                '}';
     }
 }

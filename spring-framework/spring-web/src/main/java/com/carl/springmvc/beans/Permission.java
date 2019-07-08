@@ -10,31 +10,40 @@ import java.io.Serializable;
  **/
 public class Permission implements Serializable {
     private static final long serialVersionUID = -4573410595067962426L;
-    private String id;
-    private String name;
-    private String url;
+    private String permissionId;
+    private String permissionName;
+    private String permissionUrl;
 
-    public String getId() {
-        return id;
+    public String getPermissionId() {
+        return permissionId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setPermissionId(String permissionId) {
+        this.permissionId = permissionId;
     }
 
-    public String getName() {
-        return name;
+    public String getPermissionName() {
+        return permissionName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPermissionName(String permissionName) {
+        this.permissionName = permissionName;
     }
 
-    public String getUrl() {
-        return url;
+    public String getPermissionUrl() {
+        return permissionUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setPermissionUrl(String permissionUrl) {
+        this.permissionUrl = permissionUrl;
+    }
+
+    @Override
+    public String toString() {
+        return "Permission{" +
+                "permissionId='" + permissionId + '\'' +
+                ", permissionName='" + permissionName + '\'' +
+                ", permissionUrl='" + permissionUrl + '\'' +
+                '}';
     }
 }

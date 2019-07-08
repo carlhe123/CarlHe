@@ -13,9 +13,9 @@ import java.util.Set;
 public class User implements Serializable {
 
     private static final long serialVersionUID = 5625754489381937062L;
-    private Integer id;
-    private String username;
-    private String password;
+    private Integer userId;
+    private String userName;
+    private String userPassword;
     private Set<Role> roles = new HashSet<>();
 
     public Set<Role> getRoles() {
@@ -26,26 +26,37 @@ public class User implements Serializable {
         this.roles = roles;
     }
 
-    public String getPassword() {
-        return password;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public Integer getId() {
-        return id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public String getUserName() {
+        return userName;
     }
 
-    public String getUsername() {
-        return username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", roles=" + roles +
+                '}';
     }
 }

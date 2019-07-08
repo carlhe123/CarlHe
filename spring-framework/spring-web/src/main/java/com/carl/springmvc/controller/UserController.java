@@ -64,8 +64,8 @@ public class UserController {
     @RequestMapping(value = "/user/save",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public Boolean saveUser(@RequestBody User user){
-        if (user.getId()!=null) {
-            map.put(user.getId(),user);
+        if (user.getUserId()!=null) {
+            map.put(user.getUserId(),user);
             System.out.println("save User Success.User:"+user);
             return true;
         }
