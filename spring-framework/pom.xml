@@ -25,6 +25,7 @@
         <mybatis.springboot.version>2.0.1</mybatis.springboot.version>
         <angularjs.version>1.5.8</angularjs.version>
         <druid.version>1.1.10</druid.version>
+        <excel.poi.version>3.16</excel.poi.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -106,16 +107,32 @@
                 <artifactId>orika-core</artifactId>
                 <version>1.5.4</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${excel.poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${excel.poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${excel.poi.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
