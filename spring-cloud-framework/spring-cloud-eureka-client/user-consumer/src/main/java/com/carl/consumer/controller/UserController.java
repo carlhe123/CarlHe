@@ -3,15 +3,12 @@ package com.carl.consumer.controller;
 import com.carl.api.model.User;
 import com.carl.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 /**
- * @Description TODO Carl写点注释吧！
+ * @Description 用户操作
  * @Author carl.he
  * @Date 2019/5/20 20:36
  * @Version 1.0
@@ -23,8 +20,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/user/list")
+    @GetMapping("/user/list")
     public Collection<User> getAll(){
+        System.out.println("查询全部用户");
         return userService.getAll();
     }
 
@@ -35,6 +33,7 @@ public class UserController {
 
     @PostMapping("/user/save")
     public Boolean save(@RequestBody User user){
+        System.out.println(user);
         return userService.save(user);
     }
 

@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Collection;
 
 /**
- * @Description TODO Carl写点注释吧！
+ * @Description 用户服务代理类
  * @Author carl.he
  * @Date 2019/5/21 9:46
  * @Version 1.0
@@ -35,9 +35,7 @@ public class UserServiceProxy implements UserService {
 
     @Override
     public Boolean save(User user) {
-        User returnValue =
-                restTemplate.postForObject(PROVIDER_SERVER_URL_PREFIX + "/user/save", user, User.class);
-        return returnValue != null;
+        return restTemplate.postForObject(PROVIDER_SERVER_URL_PREFIX + "/user/save", user, Boolean.class);
     }
 
     @Override
