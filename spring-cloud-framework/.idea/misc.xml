@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
       </list>
     </option>
   </component>

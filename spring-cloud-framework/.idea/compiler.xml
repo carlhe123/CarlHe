@@ -11,6 +11,7 @@
         <module name="user-consumer" />
         <module name="user-provider" />
         <module name="user-api" />
+        <module name="spring-cloud-zuul" />
         <module name="spring-cloud-eureka-server" />
         <module name="spring-cloud-config-server" />
       </profile>
