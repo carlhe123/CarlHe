@@ -1,14 +1,14 @@
 package com.carl.springmvc.service.impl;
 
 import com.carl.springmvc.beans.User;
-import com.carl.springmvc.mapper.TUserMapper;
-import com.carl.springmvc.model.TUser;
+import com.carl.springmvc.mapper.TAuthUserMapper;
+import com.carl.springmvc.model.TAuthUser;
 import com.carl.springmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -21,12 +21,12 @@ import java.util.List;
 @Component
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private TUserMapper userMapper;
+    @Resource
+    private TAuthUserMapper userMapper;
 
     @Override
-    public User findUserByName(String userName) {
-        List<User> userList =  userMapper.selectByName(userName);
+    public TAuthUser findUserByName(String userName) {
+        List<TAuthUser> userList =  userMapper.selectByName(userName);
         if (CollectionUtils.isEmpty(userList)){
             return null;
         }

@@ -1,7 +1,7 @@
 package com.carl.springmvc.service;
 
 import com.carl.springmvc.beans.User;
-import com.carl.springmvc.model.TUser;
+import com.carl.springmvc.model.TAuthUser;
 
 /**
  * @Description 用户服务
@@ -10,5 +10,5 @@ import com.carl.springmvc.model.TUser;
  * @Version 1.0
  **/
 public interface UserService {
-    User findUserByName(String userName);
+    TAuthUser findUserByName(String userName);
 }
