@@ -13,8 +13,8 @@ public class ExcelToCsvTest {
     @Test
     public void testExcelToCev(){
         try {
-            ExcelToCsv excelToCsv = new ExcelToCsv();
-            excelToCsv.write();
+//            ExcelToCsv excelToCsv = new ExcelToCsv();
+//            excelToCsv.write();
         } catch (Exception e) {
             e.printStackTrace();
         }
