@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev-primary
+
+logging:
+  file: logs/${spring.application.name}_${spring.profiles.active}.log
+  level:
+    org:
+      springframework:
+        boot: error

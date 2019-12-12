@@ -10,5 +10,5 @@ import com.carl.springmvc.model.TAuthUser;
  * @Version 1.0
  **/
 public interface UserService {
-    TAuthUser findUserByName(String userName);
+    User findUserByName(String userName);
 }

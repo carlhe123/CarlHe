@@ -13,7 +13,18 @@ import java.io.UnsupportedEncodingException;
  **/
 public class TestDemo {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        System.out.println(StringToUnicodeUtils.stringToUnicode("中文"));
-        System.out.println(StringToUnicodeUtils.unicodeToString("\\u4e2d\\u6587"));
+//        System.out.println(StringToUnicodeUtils.stringToUnicode("中文"));
+//        System.out.println(StringToUnicodeUtils.unicodeToString("\\u4e2d\\u6587"));
+
+        String A = "B";
+        switch (A){
+            case "A" :
+                System.out.println("111111111");
+            case "B":
+                System.out.println("222222222");
+                break;
+            default:
+                System.out.println("3333333333");
+        }
     }
 }

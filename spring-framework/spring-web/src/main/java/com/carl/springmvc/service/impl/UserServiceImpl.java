@@ -25,11 +25,12 @@ public class UserServiceImpl implements UserService {
     private TAuthUserMapper userMapper;
 
     @Override
-    public TAuthUser findUserByName(String userName) {
+    public User findUserByName(String userName) {
         List<TAuthUser> userList =  userMapper.selectByName(userName);
+        User user = new User();
         if (CollectionUtils.isEmpty(userList)){
             return null;
         }
-        return userList.get(0);
+        return user;
     }
 }

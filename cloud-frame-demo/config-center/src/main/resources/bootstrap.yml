@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-center
+
+  profiles:
+    active: native
+
+  cloud:
+    inetutils:
+      ignoredInterfaces:
+        - 120.0.0.1
+        - 127.0.0.1
+      preferredNetworks:
+        - 172.16
+        - 192.168
+        - 172.31
+
+    config:
+      server:
+        default-application-name: config-center
+        native:
+          searchLocations: classpath:/configs

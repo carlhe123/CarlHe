@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    prefer-ip-address: true                       # 设置微服务调用地址为IP优先（缺省为false）
+    lease-renewal-interval-in-seconds: 10         # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 30      # 发呆时间，即服务续约到期时间（缺省为90s）
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://dev_hdcf:hdcf2019@rcdev1:8761/eureka/,http://dev_hdcf:hdcf2019@rcdev2:8762/eureka/,http://dev_hdcf:hdcf2019@rcdev3:8763/eureka/
+
+logging:
+  file: /var/log/caifu/${spring.application.name}/${spring.profiles.active}.log
+  level:
+    org:
+      springframework:
+        boot: error
