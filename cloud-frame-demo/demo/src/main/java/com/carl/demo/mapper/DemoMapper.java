@@ -7,6 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
  * @Author carl.he
  * @Date 2019/12/12
  **/
-@Mapper
-public class DemoMapper {
+//@Mapper
+public interface DemoMapper {
+
+    String queryProductNameById(Long id);
+
 }

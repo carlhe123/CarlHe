@@ -6,7 +6,8 @@
 <configuration>
     <settings>
         <setting name="lazyLoadingEnabled" value="false" />
-        <setting name="logImpl" value="STDOUT_LOGGING" />
+<!--        不打印日志 如需要可放开注释-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING" />-->
     </settings>
     <typeAliases></typeAliases>
 </configuration>

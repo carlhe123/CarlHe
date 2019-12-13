@@ -8,8 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableDiscoveryClient
-@EnableEurekaClient
-@MapperScan(basePackages = {"com.carl.demo.mapper"})
+@MapperScan("com.carl.demo.mapper")
 @SpringBootApplication(scanBasePackages = {
 		"com.carl.demo.controller",
 		"com.carl.demo.service",
