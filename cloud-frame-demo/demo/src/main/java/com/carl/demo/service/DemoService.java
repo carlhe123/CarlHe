@@ -8,4 +8,8 @@ package com.carl.demo.service;
 public interface DemoService {
 
     String queryProductNameById(Long id);
+
+    String queryProductNameByIdCache(Long id);
+
+    void setProductName(Long id, String productName);
 }

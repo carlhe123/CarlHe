@@ -4,11 +4,7 @@ import com.carl.demo.bean.Result;
 import com.carl.demo.service.DemoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -16,8 +12,9 @@ import javax.annotation.Resource;
  * @Author carl.he
  * @Date 2019/12/13
  **/
-@Controller
+@RestController
 @Slf4j
+@RequestMapping("/demo")
 public class DemoController {
 
     //@Slf4j 代替

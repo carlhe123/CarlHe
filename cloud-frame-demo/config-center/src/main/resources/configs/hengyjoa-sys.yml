@@ -1,20 +1,6 @@
 server:
   port: 18888
 
-## 打印Rest信息 配置
-#logging:
-#  level:
-#    org:
-#      springframework:
-#        web: trace
-#
-#open Endpoint
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
 eureka:
   instance:
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
